@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "52984fc4-f683-41bb-bd61-c5f7570d6400",
+		"name": "Autonomous Cars API",
+		"description": "Hit this api to find if our autonomous car will be able to complete it's journey\r\n\r\nBase URL: http://localhost:8000//api/v1/autonomous-car/routes/[routes]\r\n\r\nWhere available parameters for routes are:\r\n\r\nempty-route: To retrieve a route with empty track & travelLog arrays.\r\n\r\nsuccess-no-obstacles: To retrieve a successful track with no obstacles\r\n\r\nsuccess-with-obstacles: To retrieve a successful track with obstacles\r\n\r\nfailure-out-of-bounds: To retrieve a route that should result in failure due to running out of bounds.\r\n\r\nfailure-hits-obstacle: To retrieve a route that should result in failure due to running into an obstacle.\r\n\r\nrandom: To retrieve a random route (including the empty-route).",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Random",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/autonomous-car/routes/random",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"autonomous-car",
+						"routes",
+						"random"
+					]
+				},
+				"description": "TO get a random response"
+			},
+			"response": []
+		},
+		{
+			"name": "empty-route",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/autonomous-car/routes/empty-route",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"autonomous-car",
+						"routes",
+						"empty-route"
+					]
+				},
+				"description": "To get an empty route and trave logs"
+			},
+			"response": []
+		},
+		{
+			"name": "success-no-obstacles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/autonomous-car/routes/success-no-obstacles",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"autonomous-car",
+						"routes",
+						"success-no-obstacles"
+					]
+				},
+				"description": "To retrieve a successful track with no obstacles"
+			},
+			"response": []
+		},
+		{
+			"name": "success-with-obstacles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/autonomous-car/routes/success-with-obstacles",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"autonomous-car",
+						"routes",
+						"success-with-obstacles"
+					]
+				},
+				"description": "To retrieve a successful track with obstacles."
+			},
+			"response": []
+		},
+		{
+			"name": "failure-out-of-bounds",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/autonomous-car/routes/failure-out-of-bounds",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"autonomous-car",
+						"routes",
+						"failure-out-of-bounds"
+					]
+				},
+				"description": "To retrieve a route that should result in failure due to running out of bounds."
+			},
+			"response": []
+		},
+		{
+			"name": "success-with-obstacles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/autonomous-car/routes/success-with-obstacles",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"autonomous-car",
+						"routes",
+						"success-with-obstacles"
+					]
+				},
+				"description": "To retrieve a route that should result in failure due to running into an obstacle."
+			},
+			"response": []
+		}
+	]
+}
